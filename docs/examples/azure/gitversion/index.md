@@ -2,11 +2,11 @@
 
 ```yaml
   steps:
-  - task: gitversion/setup@0
+  - task: gitversion/setup@0.9.5
     displayName: Install GitVersion
     inputs:
-      versionSpec: '5.1.3'
-  - task: gitversion/execute@0
+      versionSpec: '5.x'
+  - task: gitversion/execute@0.9.5
     displayName: Use GitVersion
   - script: |
       echo FullSemVer: $(fullSemVer)
